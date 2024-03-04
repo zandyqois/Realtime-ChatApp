@@ -24,7 +24,7 @@ ChatApp adalah aplikasi chatting sederhana yang memungkinkan pengguna untuk berk
 2. *Clone Repository*:
    ```bash
    git clone https://github.com/zandyqois/Chat-App-using-Websocket.git
-   cd chatapp
+   cd Realtime-ChatApp
    for backend : npm run start
    for frontend : npm start
 
