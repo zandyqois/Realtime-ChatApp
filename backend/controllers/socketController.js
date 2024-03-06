@@ -9,6 +9,8 @@ function initializeSocket(server) {
     });
 
     io.on('connection', (socket) => {
+        const botName = "ChatApp Bot";
+        
         socket.emit('message', 'Welcome to chatApp');
         
         socket.broadcast.emit('message', 'A user has joined the chat');

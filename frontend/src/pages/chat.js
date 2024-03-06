@@ -15,10 +15,6 @@ const Chat = ({ messages, sendMessage }) => {
         <h1>ChatApp</h1>
       </header>
       <main className="chat-main">
-        <div className="chat-sidebar">
-          <h3>Room Name:</h3>
-          <h2 id="room-name">Bumi</h2>
-        </div>
         <div className="chat-messages">
           {messages.map((message, index) => (
             <div key={index} className="message">{message}</div>

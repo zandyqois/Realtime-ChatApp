@@ -15,7 +15,7 @@ export default function App() {
     socketInstance.on('message', message => {
       console.log(message);
       setMessages(prevMessages => [...prevMessages, message]);
-    });
+    }); 
   }, []);
 
   const sendMessage = (message) => {

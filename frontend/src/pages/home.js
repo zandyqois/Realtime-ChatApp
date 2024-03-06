@@ -6,11 +6,9 @@ function Home() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    username: '',
-    room: 'Bumi',
+    username: ''
   });
 
-  // Fungsi untuk mengubah state formData saat input berubah
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
@@ -19,7 +17,7 @@ function Home() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    navigate(`/chat?username=${formData.username}&room=${formData.room}`);
+    navigate(`/chat?username=${formData.username}`);
   };
 
   return (
@@ -40,17 +38,6 @@ function Home() {
               onChange={handleChange}
               required
             />
-          </div>
-          <div className="form-control">
-            <label htmlFor="room">Room</label>
-            <select
-              name="room"
-              id="room"
-              value={formData.room}
-              onChange={handleChange}
-            >
-              <option value="Bumi">Bumi</option>
-            </select>
           </div>
           <button type="submit" className="btn">Join Chat</button>
         </form>
