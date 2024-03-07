@@ -3,8 +3,8 @@ import React, { useState } from "react";
 const Chat = ({ messages, sendMessage }) => {
   const [inputMessage, setInputMessage] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     sendMessage(inputMessage);
     setInputMessage("");
   };
@@ -30,7 +30,7 @@ const Chat = ({ messages, sendMessage }) => {
             required
             autoComplete="off"
             value={inputMessage}
-            onChange={(e) => setInputMessage(e.target.value)}
+            onChange={(event) => setInputMessage(event.target.value)}
             className="form-control"
           />
           <button className="btn" type="submit">Send</button>

@@ -12,7 +12,7 @@ ChatApp adalah aplikasi chatting sederhana yang memungkinkan pengguna untuk berk
 
 ### Fitur
 
-1. *Buat Chat Baru*: Pengguna dapat membuat chat baru dengan pengguna lain yang sudah terdaftar di aplikasi. Pengguna hanya perlu mencari nama pengguna pengguna lain dan memulai percakapan baru.
+1. *Join Chat*: Pengguna dapat masuk ke room chat yang ada. Pengguna hanya perlu mencari nama pengguna pengguna lain dan memulai percakapan baru.
 
 2. *Kirim Pesan*: Fitur utama dari aplikasi ini adalah pengguna dapat mengirim pesan teks kepada pengguna lain dalam chat yang sudah dibuat. Pesan akan langsung diterima oleh user lain secara realtime.
 
